@@ -1,0 +1,39 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.centrado{
+    text-align: center;
+}
+.encabezado{
+    padding: 40px;
+}
+.titulo{
+    margin-bottom: 20px;
+}
+.centrado a{
+    text-decoration: none; /* Quita el subrayado */
+    font-weight: bold;
+}
+.container{
+    width:950px;
+    margin: 0 auto;
+}
+.caja{
+    display: inline-block; /* Elementos en bloque */ 
+    padding:75px 30px;
+    color:white;
+    font-weight: bold;
+    width: 300px;
+    border-radius: 10px;
+}
+.azul{
+background-color: #008DD2;
+}
+.rojo{
+background-color:#EE433A ;
+}
+.verde{
+background-color: #00C56A;
+}

@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+}
+
+.barra-navegacion {
+    display: flex;
+    /* flex aplicado en header */
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.664);
+}
+
+.logotipo {
+    font-size: 1.5rem;
+    /* Tamaño letra rem: es tamaño*/
+    font-weight: 700;
+    /* Grosor de letra */
+    color: #111827;
+}
+
+.nav {
+    display: flex;
+    /*Flex aplicado en navBar */
+    align-items: center;
+    gap: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    /* quita subrayado */
+    color: #4b5563;
+    font-weight: 500;
+}
+
+.boton-principal {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    /*Quita borde por defecto */
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    /*Añade una mano cuando mouse para encima */
+    border-radius: 6px;
+}
+
+.blue {
+    color: #2563eb;
+}
+
+.seccion-principal {
+    display: flex;
+    background-color: #2585eb2c;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding:80px 50px;
+}
+
+.contenido-principal {
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    flex: 1; /*  50% 1/2 */
+}
+
+.contenedor-imagen {
+    display: flex;
+    justify-content: center;
+    flex: 1; /* 50%  1/2 */
+}
+.contenedor-imagen img{
+    width: 100%;
+    max-width: 500px; /* Ajuste ancho máximo*/
+}
+.botones{
+    display: flex;
+    gap:25px;
+    align-items: center;
+}

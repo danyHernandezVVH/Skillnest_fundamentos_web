@@ -1,0 +1,51 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.centrado{
+    text-align: center;
+}
+.encabezado{
+    padding: 40px;
+}
+.titulo{
+    margin-bottom: 20px;
+}
+.centrado a{
+   /* text-decoration: none; /* Quita el subrayado */
+    font-weight: bold;
+}
+.container{
+    outline: solid 1px red;
+    width:930px;
+    margin: 0 auto;
+}
+.caja{
+    display: inline-block; /* Elementos en bloque */ 
+    font-weight: bold;
+    width: 300px;
+    border-radius: 10px;
+    border: solid 1px blue;
+    overflow: hidden; /* Elemento interno no se desborda hacia el exterior */
+}
+.encabezado_caja{
+    padding:20px;
+    color:white;
+}
+.cuerpo_caja{
+    padding:20px;
+}
+.cuerpo_caja p{
+    margin-bottom: 20px;
+    /*margin separa hacia abajo */
+}
+.azul{
+background-color: #008DD2;
+}
+.rojo{
+background-color:#EE433A ;
+}
+.verde{
+background-color: #00C56A;
+}

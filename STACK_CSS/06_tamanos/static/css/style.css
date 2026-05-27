@@ -1,0 +1,181 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* Contabiliza bordes */
+
+}
+
+.encabezado {
+    width: 100%;
+    /* Todo el ancho de la página */
+    background-color: grey;
+    padding: 15px;
+}
+
+.titulo_header {
+    text-align: center;
+    color: white;
+}
+
+.container {
+    outline: solid 1px grey;
+    margin: 0 auto;
+    /*Centrar un elemento */
+    width: 900px;
+    padding: 20px;
+}
+
+.row {
+    padding: 30px;
+}
+
+/* Tamaños ejemplos CSS */
+.aceptar {
+    width: 100px;
+    height: 50px;
+}
+
+.caja1 {
+    margin: 0 auto;
+    /*Centrar un elemento */
+    width: 80%;
+    /* Porcentaje para dar tamaño 80/100 */
+    height: 200px;
+    background-color: yellow;
+}
+
+.parrafo1 {
+    font-size: 30px;
+    /*Tamaño fijo */
+}
+
+.link1 {
+    font-size: 300%;
+    /* Tamaño proporcional*/
+}
+
+.cursiva {
+    color: blue;
+    margin-top: 15px;
+    font-style: italic;
+}
+
+/*
+📦 Manejo del contenido con overflow: hidden, scroll, auto
+ */
+.caja {
+    width: 200px;
+    height: 100px;
+    display: inline-block;
+    /* elementos en bloque o columnas */
+}
+
+.example1 {
+    height: 100px;
+    width: 300px;
+    background-color: blue;
+}
+
+.example2 {
+    height: 100px;
+    width: 300px;
+    background-color: green;
+}
+
+.example3 {
+    height: 100px;
+    width: 300px;
+    background-color: blueviolet;
+}
+
+.hidden {
+    /* Oculta los elementos que sobresalen del contenedor */
+    overflow: hidden;
+}
+
+.scroll {
+    overflow: scroll;
+}
+
+.auto {
+    overflow: auto;
+}
+
+/*🎨 Fondo y colores */
+.banner {
+    height: 330px;
+    width: 100%;
+    background: red url("/STACK_CSS/06_tamanos/static/images/banner.png") no-repeat fixed center center;
+    background-size: 120%;
+    /* Aumenta el tamaño de la imágen dentro del contenedor */
+}
+
+/*🟫 Bordes y estilos */
+.cancelar {
+    border: 2px dotted red;
+    /* dotted: línea segmentada ....... */
+    padding: 15px;
+    cursor: pointer;
+}
+
+.articulo {
+    border: 2px solid rgb(206, 175, 175);
+    /* solid: línea sólida*/
+    height: 50px;
+    width: 100px;
+}
+
+/* 🟢 Bordes redondeados*/
+.boton_redondeado {
+    padding: 10px 40px;
+    border-radius: 15px;
+    /* redondea esquinas */
+    cursor: pointer;
+}
+
+.caja_redondeada {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    padding: 10px 16px;
+    background-color: blue;
+    font-weight: bold;
+    color: white;
+    border-radius: 50%;
+    /* 50% de radius: Círculo perfecto */
+}
+
+.cajitas {
+    width: 150px;
+    height: 40px;
+    outline: solid 1px blue;
+}
+
+.box1 {
+    background-color: rgb(204, 227, 227);
+    padding:10px; /* Padding aplicado en todos los lados */
+}
+
+.box2 {
+    background-color: rgb(207, 207, 124);
+    padding-top: 0px; /*Espacio interno: arriba*/
+    padding-right: 5px;/* Espacio interno: derecha*/
+    padding-bottom: 0px;/*Espacio interno: abajo */
+    padding-left: 5px;/*Espacio interno: izquierda */
+    /* padding: 0px 5px 0px 5px --> aplicando en todos los lados /*
+    /* padding: 0px 5px --> 0px del eje (Y) y 5px del eje (X)*/
+}
+.box3 {
+    background-color: rgba(127, 255, 133, 0.818);
+    margin: 10px; /* Margen externo: Separa elementos */
+}
+.box4 {
+    background-color: rgba(255, 127, 80, 0.455);
+    margin: 0px 20px; /* eje X modificado con margin */
+    padding:5px 0px;/* eje Y modificado con padding*/
+}
+.box5{
+    float: left;
+    width: 30%;
+}

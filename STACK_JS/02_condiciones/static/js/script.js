@@ -64,6 +64,24 @@ function accesoPermitido() {
 // Además:
 // Si la temperatura supera los 35 grados, mostrar una alerta adicional:
 //  “Temperatura extrema”.
+function mostrarTemperatura() {
+    let temperatura = parseInt(prompt("Ingresa la temperatura actual:"))
+    if (temperatura < 10 && temperatura > -30) {
+        mensaje = "Hace frío"
+    } else if (temperatura >= 10 && temperatura <= 24) {
+        mensaje = "Temperatura agradable";
+    } else if (temperatura >= 25 && temperatura <= 50) {
+        mensaje = "Hace calor";
+    } else {
+        mensaje = "❌ Ingresar valores válidos!"
+    }
+    // Alerta adicional
+    if (temperatura > 35 && temperatura < 50) {
+        mensaje += "\n ⚠ ¡Alerta!: Temperatura extrema";
+    }
+    alert(mensaje)
+}
+// 3 décimas Gabriel Naranjo
 
 // ✅ Ejercicio 4: Verificación de administrador
 // 📝 Enunciado
@@ -77,6 +95,19 @@ function accesoPermitido() {
 // Si ambos son correctos → “Bienvenido administrador”
 // Si usuario es correcto pero contraseña incorrecta → “Contraseña incorrecta”
 // Si usuario no existe → “Usuario no encontrado”
+
+function ejercicio4() {
+    let usuario = prompt("Ingrese su nombre de usuario:");
+    let contrasena = prompt("Ingrese su contraseña:");
+    if (usuario === "admin" && contrasena === "12345") {
+        alert("Bienvenido Administrador: " + usuario)
+    } else if (usuario === "admin") {
+        alert("Contraseña Incorrecta");
+    } else {
+        alert(`Usuario "${usuario}" no encontrado!`);
+    }
+}
+// 3 décimas Ignacio Orellana
 
 // ✅ Ejercicio 5: Sistema de aprobación
 // 📝 Enunciado
@@ -93,6 +124,28 @@ function accesoPermitido() {
 // Además:
 // Si alguna nota es menor a 2.0 mostrar:
 //  “Debe asistir a reforzamiento”.
+
+function ejercicio5() {
+    let nombreEstudiante = prompt("ingresa tu nombre: ")
+    let nota1 = parseFloat(prompt("ingresa nota: Ej:6.5 "))
+    let nota2 = parseFloat(prompt("ingresa nota: Ej:6.5"))
+    let nota3 = parseFloat(prompt("ingresa nota: Ej:6.5"))
+    let promedio = (nota1 + nota2 + nota3) / 3;
+    promedio = promedio.toFixed(1);
+    if (promedio >= 6.0 && (nota1 < 2.0 || nota2 < 2.0 || nota3 < 2.0 )) {
+        alert(`El estudiante ${nombreEstudiante} tiene un promedio de ${promedio} y debe asistir a reforzamiento`) 
+    } else if (promedio >= 6.0 && promedio <= 7.0){
+        alert(`El estudiante ${nombreEstudiante} tiene un promedio de ${promedio} y aprobó con excelencia`)
+    } else if (promedio >= 4.0 && (nota1 < 2.0 || nota2 < 2.0 || nota3 < 2.0 )) {
+        alert(`El estudiante ${nombreEstudiante} tiene un promedio de ${promedio} y debe asistir a reforzamiento`)
+    } else if (promedio == 4.0 && promedio < 6.0 ){
+        alert(`El estudiante ${nombreEstudiante} tiene un promedio de ${promedio} y aprobó`)
+    } else if (promedio < 4.0 && promedio >= 1.0){
+        alert(`El estudiante ${nombreEstudiante} tiene un promedio de ${promedio} y está reprobado`)
+    } else {
+        alert(`Ingrese valores validos`)
+    }
+}
 
 // 📌 Requisitos Técnicos
 // Cada ejercicio debe:

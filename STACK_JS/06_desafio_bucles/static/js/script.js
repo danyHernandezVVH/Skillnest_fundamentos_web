@@ -73,10 +73,13 @@ function calcularDescuento(){
 // Ejemplo de salida esperada:
 // Puntos acumulados: 250​​
 function calcularPuntos(){
-  for(l)
+  for(let i = 1; i <= 5; i++){
+    let puntosGanados =  i * 50;
+    alert(`Nivel ${i} - puntos ganados ${puntosGanados}`);
+  }
 }
 
-
+//Sasha (3d)
 // 🔔 Contador de notificaciones en una app: Imagina 
 // que una aplicación 
 // de mensajería muestra un contador de notificaciones 
@@ -91,7 +94,17 @@ function calcularPuntos(){
 // ...
 // Tienes 1 notificación nueva.
 // No tienes notificaciones pendientes.​​
+function ContadorNotificaciones(){
+  for (let i = 5; i>0; i--){
+    alert (`Tienes ${i} notificaciones nuevas.`)
+  }
+  alert(`No tienes notificaciones pendientes.​​`)
+}
+
+
+//Nayara (3d)
 // 💡 Tips
+
 
 // ✅ Recuerda usar for cuando conozcas la cantidad de 
 // repeticiones y while cuando dependas de una condición externa.
